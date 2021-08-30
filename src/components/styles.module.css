@@ -1,0 +1,132 @@
+/* MultiGridTable default theme */
+
+.ReactVirtualized__MultiGridTable__Cell {
+  flex: 1 0 auto;
+  padding: 0px 8px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.ReactVirtualized__MultiGridTable__HeaderCell {
+}
+
+.ReactVirtualized__MultiGridTable__CellHover {
+  background-color: #efefef;
+}
+
+.ReactVirtualized__MultiGridTable__CellSelected {
+  background-color: #cbe7ff;
+}
+
+.ReactVirtualized__MultiGridTable__Cell > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: none;
+}
+
+.ReactVirtualized__MultiGridTable__Right {
+  justify-content: flex-end;
+}
+
+.ReactVirtualized__MultiGridTable__Center {
+  justify-content: center;
+}
+
+.ReactVirtualized__MultiGridTable__NonePointerEvents {
+  pointer-events: none;
+}
+
+.ReactVirtualized__MultiGridTable__SortBy {
+  padding-right: 18px;
+  position: relative;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.ReactVirtualized__MultiGridTable__SortBy:before,
+.ReactVirtualized__MultiGridTable__SortBy:after {
+  border: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 0;
+  right: 5px;
+  top: 50%;
+  position: absolute;
+  width: 0;
+}
+
+.ReactVirtualized__MultiGridTable__SortBy:before {
+  border-bottom-color: #666;
+  margin-top: -9px;
+  opacity: 0.3;
+}
+
+.ReactVirtualized__MultiGridTable__SortBy:after {
+  border-top-color: #666;
+  margin-top: 1px;
+  opacity: 0.3;
+}
+
+.ReactVirtualized__MultiGridTable__AscSort:before {
+  opacity: 1 !important;
+}
+
+.ReactVirtualized__MultiGridTable__DescSort:after {
+  opacity: 1 !important;
+}
+
+.ReactVirtualized__MultiGridTable__HeaderResize {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  position: relative;
+}
+
+.ReactVirtualized__MultiGridTable__HeaderResize:hover {
+  border-left: 2px dotted #b3b3b3 !important;
+}
+
+.ReactVirtualized__MultiGridTable__HeaderResize:hover .ReactVirtualized__MultiGridTable__ResizeHandle {
+  opacity: 1;
+}
+
+.ReactVirtualized__MultiGridTable__ResizeHandle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+  cursor: col-resize;
+  right: 0;
+  box-sizing: border-box;
+  width: 6px;
+  height: 100%;
+  opacity: 0;
+}
+
+.ReactVirtualized__MultiGridTable__ResizeHandle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 40%;
+  border-left: 2px solid #9c9c9c;
+} 
+
+.ReactVirtualized__MultiGridTable__ResizeHandle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  height: 55%;
+  border-right: 2px solid #9c9c9c;
+} 
+
+.ReactVirtualized__MultiGridTable__HeaderSortable {
+  cursor: grab;
+}
